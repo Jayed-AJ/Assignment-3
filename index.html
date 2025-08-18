@@ -16,6 +16,8 @@
             extend: {
             colors: {
                 clifford: '#da373d',
+                btnbg: 'rgba(23, 152, 0, 1)',
+                btnbg2: 'rgba(0, 200, 0, 1)',
             }
           }
         }
@@ -28,9 +30,62 @@
   </style>
 </head>
 <body class="sora">
+  <!-- header section -->
+    <header>
+    <!-- Nav bar  -->
+      <div class="navbar bg-base-100 px-4 md:w-10/12 mx-auto">
+        <div class="navbar-start">
+          <img src="assets/logo-header.png" alt="" class="h-10">
+        </div>
+        <!-- nav item hidden -->
+        <div class="navbar-end lg:hidden">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-green-500">
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li>
+                <li><a>Login</a></li>
+                <li><a>Register</a></li>
+                <a>Product</a>
+                <ul class="p-2">
+                  <li><a>Row Material</a></li>
+                  <li><a>Grocery Product</a></li>
+                </ul>
+              </li>
+              <li><a>Service</a></li>
+              <li><a>Contact Us</a></li>
+              <li><a>Search<i class="fa-solid fa-magnifying-glass text-2xl"></i></a></li>
+              <li><a>Cart<i class="fa-solid fa-cart-shopping text-xl "></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <details>
+                <summary>Product</summary>
+                <ul class="p-2">
+                  <li><a>Grocery Product</a></li>
+                  <li><a>Raw Material</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Service</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end space-x-2 hidden lg:flex">
+          <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+          <i class="fa-solid fa-cart-shopping text-2xl "></i>
+          <a class="btn bg-white border border-btnbg hover:border-btnbg2 border-box px-5">Login</a>
+          <a class="btn bg-btnbg hover:bg-btnbg2 px-5">Register</a>
+        </div>
+      </div>
+    </header>
     <main>
-        <button class="btn btn-warning">hellow</button>
-        <h1 class="text-5xl">hellow world</h1>
     </main>
 </body>
 </html>
