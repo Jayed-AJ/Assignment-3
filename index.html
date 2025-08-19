@@ -33,19 +33,19 @@
   <!-- header section -->
     <header>
     <!-- Nav bar  -->
-      <div class="navbar bg-base-100 px-4 md:w-10/12 mx-auto">
+      <div class="navbar bg-base-100 px-4 md:w-10/12 mx-auto border">
         <div class="navbar-start">
           <img src="assets/logo-header.png" alt="" class="h-10">
         </div>
         <!-- nav item hidden -->
-        <div class="navbar-end lg:hidden">
+        <div class="navbar-end mr-14 md:mr-0 lg:hidden">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-green-500">
               <i class="fa-solid fa-bars text-2xl"></i>
             </div>
             <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              tabindex="1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-30 p-2 shadow border-red-600">
               <li>
                 <li><a>Login</a></li>
                 <li><a>Register</a></li>
@@ -80,12 +80,40 @@
         <div class="navbar-end space-x-2 hidden lg:flex">
           <i class="fa-solid fa-magnifying-glass text-2xl"></i>
           <i class="fa-solid fa-cart-shopping text-2xl "></i>
-          <a class="btn bg-white border border-btnbg hover:border-btnbg2 border-box px-5">Login</a>
-          <a class="btn bg-btnbg hover:bg-btnbg2 px-5">Register</a>
+          <button class="btn btn-sm bg-white hover:bg-white border border-btnbg hover:border-btnbg2 hover:text-btnbg2 border-box px-5"><a class="font-light">Login</a></button>
+          <button class="btn btn-sm bg-btnbg hover:bg-btnbg2 px-5"><a class="text-white text-sm">Register</a></button>
         </div>
       </div>
     </header>
     <main>
+      <!-- banner-section -->
+      <div class="mt-32 bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl text-center font-semibold mt-5 px-1">Freshness <span class="text-btnbg">You Can <br> Count</span> On, Prices You’ll Love!</h1>
+        <p class="text-lg text-gray-700 text-center mt-5 px-1">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+        <div class="w-10/12 mt-2 md:mt-12 mx-auto"><img src="assets/hero-vegetables.png" alt="" class="w-full"></div>
+      </div>
+      <!-- Service-section -->
+       <div class="mt-32 px-2 md:w-10/12 mx-auto">
+        <h1 class="font-semibold text-3xl text-btnbg">Service</h1>
+        <div class="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <div class="w-full bg-[#EFEBE3] p-6 md:py-16 lg:py-10 rounded-xl space-y-5">
+          <div class="w-20 mx-auto"><img src="assets/service.png" alt="" class="rounded-full w-full"></div>
+          <h3 class="text-center text-2xl font-semibold">24/7 Services </h3>
+          <p class="text-sm text-center text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        </div>
+        <div class="w-full bg-[#EFEBE3] p-6 md:py-16 lg:py-10 rounded-xl space-y-5">
+          <div class="w-20 mx-auto"><img src="assets/healthy.png" alt="" class="rounded-full w-full"></div>
+          <h3 class="text-center text-2xl font-semibold">Healthy Products</h3>
+          <p class="text-sm text-center text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        </div>
+        <div class="w-full bg-[#EFEBE3] p-6 md:py-16 lg:py-10 rounded-xl space-y-5">
+          <div class="w-20 mx-auto"><img src="assets/delivery.png" alt="" class="rounded-full w-full"></div>
+          <h3 class="text-center text-2xl font-semibold">Fast Delivery</h3>
+          <p class="text-sm text-center text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        </div>
+       </div>
+       </div>
+
     </main>
 </body>
 </html>
